@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest App</title>
+       <!-- Custom CSS -->
+       <link rel="stylesheet" href="style.css">
+       <!-- Custom JavaScript -->
+       <script src="index.js"></script>
+       <!-- Bootstrap 5 CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       <!-- Bootstrap 5 JavaScript -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+
+<div class="mainContent">
+    <label>PRINCIPAL</label><br>
+    <input id="principal"><br>
+
+    <label>INTEREST RATE</label><br>
+    <input id="rate"><br>
+
+    <label>DURATION (years)</label><br>
+    <input id="duration"><br>
+
+    <label>ADDITION</label><br>
+    <input id="addition"><br>
+
+    <select class="form-select dropdownButton" aria-label="Default select example" id="frequency" style="background-color: #0D1721; color: #05AA6D; font-weight: bold; border: 1px solid #05AA6D;">
+        <option selected>COMPOUND FREQUENCY</option>
+        <option value="1">Once A Year</option>
+        <option value="4">Quarterly (4 times a year)</option>
+        <option value="12">Monthly (12 times a year)</option>
+        <option value="52">Weekly (52 times a year)</option>
+        <option value="365">Daily (365 times a year)</option>
+    </select>
+
+    <button class="calculate" onclick="compoundInterest()">Calculate</button>
+
+    <div class="display" id="display"></div>
+
+</div>
+
+</body>
+</html>
